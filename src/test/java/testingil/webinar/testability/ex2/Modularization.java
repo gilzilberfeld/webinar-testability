@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class Abstraction {
+class Modularization {
 
 	@Test
 	@DisplayName("Spring test, with multiple bean dependencies, "
