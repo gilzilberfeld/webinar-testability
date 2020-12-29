@@ -1,12 +1,10 @@
 package testingil.webinar.testability.ex4;
 
-import testingil.webinar.testability.ex2.dependencies.PowerRepository;
-
-public class TestableAdderWithDependencyInjection {
+public class SuperbAdder {
 	private int temporaryResult=0;
 	private StoreHandler handler;
 	
-	public TestableAdderWithDependencyInjection(StoreHandler store) {
+	public SuperbAdder(StoreHandler store) {
 		this.handler = store;
 	}
 	

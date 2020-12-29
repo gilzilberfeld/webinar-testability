@@ -11,25 +11,25 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import testingil.webinar.testability.ex2.calculators.AdderCalculatorService;
-import testingil.webinar.testability.ex2.calculators.SuperCalculatorService;
+import testingil.webinar.testability.ex2.calculators.AdderService;
+import testingil.webinar.testability.ex2.calculators.GodService;
 import testingil.webinar.testability.ex2.dependencies.AdderLogic;
 import testingil.webinar.testability.ex2.dependencies.PowerInfo;
 import testingil.webinar.testability.ex2.dependencies.PowerLogic;
 import testingil.webinar.testability.ex2.dependencies.PowerRepository;
 
 @SpringBootTest
-class CalculatorTests_2 {
+class JustAdderTests {
 
 	@Autowired
-	public AdderCalculatorService calc;
+	public AdderService calc;
 
 	@Configuration
 	static class ContextConfiguration {
 
 		@Bean
-		public AdderCalculatorService calculator() {
-			return new AdderCalculatorService();
+		public AdderService calculator() {
+			return new AdderService();
 		}
 
 		@Bean

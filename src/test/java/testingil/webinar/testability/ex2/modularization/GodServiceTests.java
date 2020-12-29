@@ -11,24 +11,24 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import testingil.webinar.testability.ex2.calculators.SuperCalculatorService;
+import testingil.webinar.testability.ex2.calculators.GodService;
 import testingil.webinar.testability.ex2.dependencies.AdderLogic;
 import testingil.webinar.testability.ex2.dependencies.PowerInfo;
 import testingil.webinar.testability.ex2.dependencies.PowerLogic;
 import testingil.webinar.testability.ex2.dependencies.PowerRepository;
 
 @SpringBootTest
-class CalculatorTests_1 {
+class GodServiceTests {
 
 	@Autowired
-	public SuperCalculatorService calc;
+	public GodService calc;
 
 	@Configuration
 	static class ContextConfiguration {
 
 		@Bean
-		public SuperCalculatorService calculator() {
-			return new SuperCalculatorService();
+		public GodService calculator() {
+			return new GodService();
 		}
 
 		@Bean

@@ -9,7 +9,7 @@ import testingil.webinar.testability.ex2.dependencies.PowerInfo;
 import testingil.webinar.testability.ex2.dependencies.PowerLogic;
 
 @Service
-public class SuperCalculatorService {
+public class GodService {
 
 	int currentResult = 0;
 	

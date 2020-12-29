@@ -1,12 +1,12 @@
 package testingil.webinar.testability.ex2.calculators;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import testingil.webinar.testability.ex2.dependencies.AdderLogic;
 
-@Component
-public class AdderCalculatorService {
+@Service
+public class AdderService {
 
 	int currentResult = 0;
 	

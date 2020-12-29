@@ -1,13 +1,13 @@
 package testingil.webinar.testability.ex2.calculators;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import testingil.webinar.testability.ex2.dependencies.PowerInfo;
 import testingil.webinar.testability.ex2.dependencies.PowerLogic;
 
-@Component
-public class PowerCalculatorService {
+@Service
+public class PowerService {
 
 	int currentResult = 0;
 
