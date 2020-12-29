@@ -4,6 +4,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.mock;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -39,6 +40,7 @@ class CalculatorTests_2 {
 	}
 
 	@Test
+	@DisplayName("Requires just dependencies that it needs")
 	void calculator_with_many_dependencies() {
 		calc.add(2);
 		assertThat(calc.getResult(), is(2));
