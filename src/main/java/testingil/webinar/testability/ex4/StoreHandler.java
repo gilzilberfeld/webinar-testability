@@ -1,4 +1,4 @@
-package testingil.webinar.testability.ex3;
+package testingil.webinar.testability.ex4;
 
 import testingil.webinar.testability.ex2.dependencies.PowerRepository;
 
