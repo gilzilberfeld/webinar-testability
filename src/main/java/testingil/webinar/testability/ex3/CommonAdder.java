@@ -2,8 +2,8 @@ package testingil.webinar.testability.ex3;
 
 import testingil.webinar.testability.ex2.dependencies.PowerRepository;
 
-public class ImprovedAdder {
-	protected int temporaryResult=0;
+public class CommonAdder {
+	private int temporaryResult=0;
 	private PowerRepository repository = new PowerRepository();
 	
 	public void add(int a, int b) {
@@ -11,10 +11,11 @@ public class ImprovedAdder {
 		storeAndAdd(b);
 	}
 	
-	protected void storeAndAdd(int a) {
+	private void storeAndAdd(int a) {
 		repository.storeInDB(a);
 		temporaryResult +=a;
 	}
+	
 
 	public int getResult() {
 		return temporaryResult;

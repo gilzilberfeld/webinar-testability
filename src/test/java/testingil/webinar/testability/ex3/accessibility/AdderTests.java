@@ -6,15 +6,15 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import testingil.webinar.testability.ex3.Adder;
-import testingil.webinar.testability.ex3.ImprovedAdder;
+import testingil.webinar.testability.ex3.CommonAdder;
+import testingil.webinar.testability.ex3.LegendaryAdder;
 
 class AdderTests{
 
 	@Test
 	@DisplayName("This one goes to the database")
 	void adderTest() {
-		Adder adder = new Adder();
+		CommonAdder adder = new CommonAdder();
 		adder.add(3, 4);
 		assertThat(adder.getResult(), is(7));
 	}
@@ -22,7 +22,7 @@ class AdderTests{
 	@Test
 	@DisplayName("This one doesn't")
 	void improvedAdderTest() {
-		ImprovedAdder adder = new TestableImprovedAdder();
+		LegendaryAdder adder = new TestableImprovedAdder();
 		adder.add(3, 4);
 		assertThat(adder.getResult(), is(7));
 	}

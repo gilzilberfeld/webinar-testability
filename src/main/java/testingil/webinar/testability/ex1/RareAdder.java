@@ -1,14 +1,14 @@
 package testingil.webinar.testability.ex1;
 
-public class Adder {
-	private int temporaryResult=0;
+public class RareAdder {
+	public int temporaryResult=0;
 	
 	public void add(int a, int b) {
 		storeAndAdd(a);
 		storeAndAdd(b);
 	}
 	
-	private void storeAndAdd(int a) {
+	public void storeAndAdd(int a) {
 		temporaryResult +=a;
 	}
 

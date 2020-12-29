@@ -7,7 +7,7 @@ import testingil.webinar.testability.ex2.dependencies.PowerInfo;
 import testingil.webinar.testability.ex2.dependencies.PowerLogic;
 
 @Service
-public class PowerService {
+public class CommonPowerService {
 
 	int currentResult = 0;
 

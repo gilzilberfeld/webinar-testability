@@ -11,24 +11,25 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import testingil.webinar.testability.ex2.calculators.GodService;
+import testingil.webinar.testability.ex2.calculators.CommonAdderService;
+import testingil.webinar.testability.ex2.calculators.SetService;
 import testingil.webinar.testability.ex2.dependencies.AdderLogic;
 import testingil.webinar.testability.ex2.dependencies.PowerInfo;
 import testingil.webinar.testability.ex2.dependencies.PowerLogic;
 import testingil.webinar.testability.ex2.dependencies.PowerRepository;
 
 @SpringBootTest
-class GodServiceTests {
+class JustCommonAdderTests {
 
 	@Autowired
-	public GodService calc;
+	public CommonAdderService calc;
 
 	@Configuration
 	static class ContextConfiguration {
 
 		@Bean
-		public GodService calculator() {
-			return new GodService();
+		public CommonAdderService calculator() {
+			return new CommonAdderService();
 		}
 
 		@Bean
@@ -36,25 +37,10 @@ class GodServiceTests {
 			return new AdderLogic();
 		}
 
-		@Bean
-		public PowerInfo powerInfo() {
-			return mock(PowerInfo.class);
-		}
-
-		@Bean
-		public PowerLogic powerLogic() {
-			return mock(PowerLogic.class);
-		}
-
-		@Bean
-		public PowerRepository powerRepository() {
-			return mock(PowerRepository.class);
-		}
-
 	}
 
 	@Test
-	@DisplayName("Requires many dependencies that it doesn't need")
+	@DisplayName("Requires just dependencies that it needs")
 	void calculator_with_many_dependencies() {
 		calc.add(2);
 		assertThat(calc.getResult(), is(2));
