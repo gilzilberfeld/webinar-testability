@@ -1,14 +1,15 @@
-package testingil.webinar.testability.ex2;
+package testingil.webinar.testability.ex2.calculators;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-import testingil.webinar.testability.ex2.internal.AdderLogic;
-import testingil.webinar.testability.ex2.internal.PowerInfo;
-import testingil.webinar.testability.ex2.internal.PowerLogic;
+import testingil.webinar.testability.ex2.dependencies.AdderLogic;
+import testingil.webinar.testability.ex2.dependencies.PowerInfo;
+import testingil.webinar.testability.ex2.dependencies.PowerLogic;
 
-@Component
-public class Calculator {
+@Service
+public class SuperCalculatorService {
 
 	int currentResult = 0;
 	
@@ -30,7 +31,7 @@ public class Calculator {
 		return currentResult;
 	}
 	
-	public void doSomethingWithBAndC() {
+	public void raisePower() {
 		powerLogic.toThePower(currentResult, powerInfo.getPower());
 		currentResult = powerLogic.result;
 	}

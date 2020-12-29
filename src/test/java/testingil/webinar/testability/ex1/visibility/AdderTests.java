@@ -1,4 +1,4 @@
-package testingil.webinar.testability.ex1;
+package testingil.webinar.testability.ex1.visibility;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -6,7 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class Visibility {
+import testingil.webinar.testability.ex1.TestableAdder;
+
+class AdderTests {
 
 	@Test
 	@DisplayName("Can check only end state")

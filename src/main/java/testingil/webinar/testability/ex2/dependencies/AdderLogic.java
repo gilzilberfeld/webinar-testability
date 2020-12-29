@@ -1,4 +1,4 @@
-package testingil.webinar.testability.ex2.internal;
+package testingil.webinar.testability.ex2.dependencies;
 
 public class AdderLogic {
 
