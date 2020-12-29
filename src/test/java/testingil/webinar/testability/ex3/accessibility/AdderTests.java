@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import testingil.webinar.testability.ex3.Adder;
-import testingil.webinar.testability.ex3.BetterAdder;
+import testingil.webinar.testability.ex3.ImprovedAdder;
 
 class AdderTests{
 
@@ -21,8 +21,8 @@ class AdderTests{
 	
 	@Test
 	@DisplayName("This one doesn't")
-	void betterAdderTest() {
-		BetterAdder adder = new TestableBetterAdder();
+	void improvedAdderTest() {
+		ImprovedAdder adder = new TestableImprovedAdder();
 		adder.add(3, 4);
 		assertThat(adder.getResult(), is(7));
 	}

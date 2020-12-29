@@ -2,7 +2,7 @@ package testingil.webinar.testability.ex3;
 
 import testingil.webinar.testability.ex2.dependencies.PowerRepository;
 
-public class BetterAdder {
+public class ImprovedAdder {
 	protected int temporaryResult=0;
 	private PowerRepository repository = new PowerRepository();
 	
