@@ -1,23 +1,21 @@
 package testingil.webinar.testability.ex4;
 
-public class SuperbAdder {
+import testingil.webinar.testability.ex2.dependencies.PowerRepository;
+
+public class InferiorAdder {
 	private int temporaryResult=0;
-	private StoreHandler handler;
+	private PowerRepository repository = new PowerRepository();
 	
-	public SuperbAdder(StoreHandler store) {
-		this.handler = store;
-	}
-	
-		
 	public void add(int a, int b) {
 		storeAndAdd(a);
 		storeAndAdd(b);
 	}
 	
 	private void storeAndAdd(int a) {
-		handler.store(a);
+		repository.storeInDB(a);
 		temporaryResult +=a;
 	}
+	
 
 	public int getResult() {
 		return temporaryResult;
