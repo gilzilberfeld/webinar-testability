@@ -2,7 +2,7 @@ package testingil.webinar.testability.ex4.accessibility;
 
 import testingil.webinar.testability.ex3.modularity.dependencies.PowerRepository;
 
-public class CommonAdder {
+public final class CommonAdder {
 	private int temporaryResult=0;
 	private PowerRepository repository = new PowerRepository();
 	
