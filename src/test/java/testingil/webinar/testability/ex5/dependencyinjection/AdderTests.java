@@ -7,7 +7,7 @@ import static org.mockito.Mockito.mock;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import testingil.webinar.testability.ex3.modularity.dependencies.PowerRepository;
+import testingil.webinar.testability.ex4.accessibility.AdderRepository;
 
 class AdderTests {
 
@@ -22,7 +22,7 @@ class AdderTests {
 	@Test
 	@DisplayName("This one definitely doesn't")
 	void improvedAdderTest() {
-		PowerRepository mockRepository = mock(PowerRepository.class);
+		AdderRepository mockRepository = mock(AdderRepository.class);
 		RareAdder adder = new RareAdder(mockRepository);
 		adder.add(3, 4);
 		assertThat(adder.getResult(), is(7));

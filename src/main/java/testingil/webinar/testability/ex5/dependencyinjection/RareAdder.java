@@ -1,17 +1,18 @@
 package testingil.webinar.testability.ex5.dependencyinjection;
 
 import testingil.webinar.testability.ex3.modularity.dependencies.PowerRepository;
+import testingil.webinar.testability.ex4.accessibility.AdderRepository;
 
 public class RareAdder {
 	private int temporaryResult=0;
-	private PowerRepository repository;
+	private AdderRepository repository;
+	
+	public RareAdder(AdderRepository rep) {
+		this.repository= rep;
+	}
 	
 	public void store(int a) {
 		repository.storeInDB(a);
-	}
-		
-	public RareAdder(PowerRepository rep) {
-		this.repository= rep;
 	}
 
 	public void add(int a, int b) {

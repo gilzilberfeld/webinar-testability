@@ -1,10 +1,8 @@
 package testingil.webinar.testability.ex4.accessibility;
 
-import testingil.webinar.testability.ex3.modularity.dependencies.PowerRepository;
-
 public class LegendaryAdder {
 	protected int temporaryResult=0;
-	private PowerRepository repository = new PowerRepository();
+	private AdderRepository repository = new AdderRepository();
 	
 	public void add(int a, int b) {
 		storeAndAdd(a);

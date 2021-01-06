@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class AdderTests {
 
 	@Test
-	@DisplayName("One code path")
+	@DisplayName("First code path")
 	void inferiorAdderTest_1() {
 		InferiorAdder adder = new InferiorAdder();
 		adder.add(3);
