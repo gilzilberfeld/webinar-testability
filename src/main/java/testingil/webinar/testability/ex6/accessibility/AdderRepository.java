@@ -1,4 +1,4 @@
-package testingil.webinar.testability.ex4.accessibility;
+package testingil.webinar.testability.ex6.accessibility;
 
 public class AdderRepository {
 

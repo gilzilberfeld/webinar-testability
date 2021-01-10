@@ -1,6 +1,6 @@
 package testingil.webinar.testability.ex5.dependencyinjection;
 
-import testingil.webinar.testability.ex4.accessibility.AdderRepository;
+import testingil.webinar.testability.ex6.accessibility.AdderRepository;
 
 public class InferiorAdder {
 	private int temporaryResult=0;
