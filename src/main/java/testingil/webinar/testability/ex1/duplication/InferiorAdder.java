@@ -1,6 +1,6 @@
 package testingil.webinar.testability.ex1.duplication;
 
-import testingil.webinar.testability.ex3.modularity.dependencies.PowerRepository;
+import testingil.webinar.testability.ex5.modularity.dependencies.PowerRepository;
 
 public class InferiorAdder {
 	private int temporaryResult=0;

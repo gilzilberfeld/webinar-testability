@@ -1,10 +1,10 @@
-package testingil.webinar.testability.ex3.modularity.calculators;
+package testingil.webinar.testability.ex5.modularity.calculators;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import testingil.webinar.testability.ex3.modularity.dependencies.PowerInfo;
-import testingil.webinar.testability.ex3.modularity.dependencies.PowerLogic;
+import testingil.webinar.testability.ex5.modularity.dependencies.PowerInfo;
+import testingil.webinar.testability.ex5.modularity.dependencies.PowerLogic;
 
 @Service
 public class CommonPowerService {

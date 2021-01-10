@@ -1,4 +1,4 @@
-package testingil.webinar.testability.ex5.dependencyinjection;
+package testingil.webinar.testability.ex3.dependencyinjection;
 
 import testingil.webinar.testability.ex6.accessibility.AdderRepository;
 

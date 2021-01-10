@@ -1,4 +1,4 @@
-package testingil.webinar.testability.ex3.modularity;
+package testingil.webinar.testability.ex5.modularity;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -11,11 +11,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import testingil.webinar.testability.ex3.modularity.calculators.SetService;
-import testingil.webinar.testability.ex3.modularity.dependencies.AdderLogic;
-import testingil.webinar.testability.ex3.modularity.dependencies.PowerInfo;
-import testingil.webinar.testability.ex3.modularity.dependencies.PowerLogic;
-import testingil.webinar.testability.ex3.modularity.dependencies.PowerRepository;
+import testingil.webinar.testability.ex5.modularity.calculators.SetService;
+import testingil.webinar.testability.ex5.modularity.dependencies.AdderLogic;
+import testingil.webinar.testability.ex5.modularity.dependencies.PowerInfo;
+import testingil.webinar.testability.ex5.modularity.dependencies.PowerLogic;
+import testingil.webinar.testability.ex5.modularity.dependencies.PowerRepository;
 
 @SpringBootTest
 class SetServiceTests {

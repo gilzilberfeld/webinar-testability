@@ -1,4 +1,4 @@
-package testingil.webinar.testability.ex5.dependencyinjection;
+package testingil.webinar.testability.ex3.dependencyinjection;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -7,6 +7,8 @@ import static org.mockito.Mockito.mock;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import testingil.webinar.testability.ex3.dependencyinjection.InferiorAdder;
+import testingil.webinar.testability.ex3.dependencyinjection.RareAdder;
 import testingil.webinar.testability.ex6.accessibility.AdderRepository;
 
 class AdderTests {

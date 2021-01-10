@@ -1,4 +1,4 @@
-package testingil.webinar.testability.ex3.modularity.dependencies;
+package testingil.webinar.testability.ex5.modularity.dependencies;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

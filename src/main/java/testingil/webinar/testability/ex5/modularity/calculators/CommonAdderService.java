@@ -1,9 +1,9 @@
-package testingil.webinar.testability.ex3.modularity.calculators;
+package testingil.webinar.testability.ex5.modularity.calculators;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import testingil.webinar.testability.ex3.modularity.dependencies.AdderLogic;
+import testingil.webinar.testability.ex5.modularity.dependencies.AdderLogic;
 
 @Service
 public class CommonAdderService {

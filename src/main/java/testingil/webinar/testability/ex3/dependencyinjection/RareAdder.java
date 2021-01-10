@@ -1,6 +1,6 @@
-package testingil.webinar.testability.ex5.dependencyinjection;
+package testingil.webinar.testability.ex3.dependencyinjection;
 
-import testingil.webinar.testability.ex3.modularity.dependencies.PowerRepository;
+import testingil.webinar.testability.ex5.modularity.dependencies.PowerRepository;
 import testingil.webinar.testability.ex6.accessibility.AdderRepository;
 
 public class RareAdder {
