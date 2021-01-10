@@ -1,10 +1,8 @@
 package testingil.webinar.testability.ex1.duplication;
 
-import testingil.webinar.testability.ex5.modularity.dependencies.PowerRepository;
-
 public class CommonAdder {
 	private int temporaryResult=0;
-	private PowerRepository repository = new PowerRepository();
+	private AdderRepository repository = new AdderRepository();
 	
 	public void addTwo(int a, int b) {
 		storeAndAdd(a);

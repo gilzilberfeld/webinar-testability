@@ -6,9 +6,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import testingil.webinar.testability.ex6.accessibility.CommonAdder;
-import testingil.webinar.testability.ex6.accessibility.LegendaryAdder;
-
 class AdderTests{
 
 	@Test

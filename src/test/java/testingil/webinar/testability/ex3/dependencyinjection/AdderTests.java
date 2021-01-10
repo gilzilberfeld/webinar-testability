@@ -7,9 +7,8 @@ import static org.mockito.Mockito.mock;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import testingil.webinar.testability.ex3.dependencyinjection.InferiorAdder;
-import testingil.webinar.testability.ex3.dependencyinjection.RareAdder;
-import testingil.webinar.testability.ex6.accessibility.AdderRepository;
+import testingil.webinar.testability.ex1.duplication.AdderRepository;
+
 
 class AdderTests {
 
