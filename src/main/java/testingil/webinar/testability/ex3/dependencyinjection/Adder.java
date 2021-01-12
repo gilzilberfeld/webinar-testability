@@ -2,7 +2,7 @@ package testingil.webinar.testability.ex3.dependencyinjection;
 
 import testingil.webinar.testability.ex1.duplication.AdderRepository;
 
-public class InferiorAdder {
+public class Adder {
 	private int temporaryResult=0;
 	private AdderRepository repository = new AdderRepository();
 	

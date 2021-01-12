@@ -1,6 +1,6 @@
 package testingil.webinar.testability.ex6.accessibility;
 
-public class LegendaryAdder {
+public class BetterAdder {
 	protected int temporaryResult=0;
 	private AdderRepository repository = new AdderRepository();
 	

@@ -2,11 +2,11 @@ package testingil.webinar.testability.ex3.dependencyinjection;
 
 import testingil.webinar.testability.ex1.duplication.AdderRepository;
 
-public class RareAdder {
+public class BetterAdder {
 	private int temporaryResult=0;
 	private AdderRepository repository;
 	
-	public RareAdder(AdderRepository rep) {
+	public BetterAdder(AdderRepository rep) {
 		this.repository= rep;
 	}
 	

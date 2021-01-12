@@ -11,15 +11,15 @@ class AdderTests {
 	@Test
 	@DisplayName("Can check only end state")
 	void adder_test() {
-		InferiorAdder adder = new InferiorAdder();
+		Adder adder = new Adder();
 		adder.add(4, 5);
 		assertThat(adder.getResult(), is(9));
 	}
 
 	@Test
 	@DisplayName("Can check internal state")
-	void better_adder_test() {
-		RareAdder adder = new RareAdder();
+	void betteradder_test() {
+		BetterAdder adder = new BetterAdder();
 		adder.storeAndAdd(3);
 		assertThat(adder.getResult(), is(3));
 	}

@@ -1,6 +1,6 @@
 package testingil.webinar.testability.ex6.accessibility;
 
-public final class CommonAdder {
+public final class Adder {
 	private int temporaryResult=0;
 	private AdderRepository repository = new AdderRepository();
 	

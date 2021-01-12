@@ -1,10 +1,10 @@
 package testingil.webinar.testability.ex4.mockability;
 
-public class CommonAdder {
+public class Adder {
 	private int temporaryResult=0;
 	private InferiorRepository repository;
 	
-	public CommonAdder(InferiorRepository repository) {
+	public Adder(InferiorRepository repository) {
 		this.repository= repository;
 	}
 	

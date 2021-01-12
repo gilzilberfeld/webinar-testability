@@ -10,24 +10,24 @@ class AdderTests {
 
 	@Test
 	@DisplayName("First code path")
-	void inferiorAdderTest_1() {
-		InferiorAdder adder = new InferiorAdder();
+	void adderTest_1() {
+		Adder adder = new Adder();
 		adder.add(3);
 		assertThat(adder.getResult(), is(3));
 	}
 	
 	@Test
 	@DisplayName("Second code path")
-	void inferiorAdder_2() {
-		InferiorAdder adder = new InferiorAdder();
+	void adderTest_2() {
+		Adder adder = new Adder();
 		adder.addTwo(3, 4);
 		assertThat(adder.getResult(), is(7));
 	}
 	
 	@Test
 	@DisplayName("Covers both")
-	void improvedAdderTest() {
-		CommonAdder adder = new CommonAdder();
+	void betterAdderTest() {
+		BetterAdder adder = new BetterAdder();
 		adder.addTwo(3, 4);
 		assertThat(adder.getResult(), is(7));
 	}

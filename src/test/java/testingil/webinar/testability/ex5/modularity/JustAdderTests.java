@@ -10,21 +10,21 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import testingil.webinar.testability.ex5.modularity.calculators.CommonAdderService;
+import testingil.webinar.testability.ex5.modularity.calculators.AdderService;
 import testingil.webinar.testability.ex5.modularity.dependencies.AdderLogic;
 
 @SpringBootTest
-class JustCommonAdderTests {
+class JustAdderTests {
 
 	@Autowired
-	public CommonAdderService calc;
+	public AdderService calc;
 
 	@Configuration
 	static class ContextConfiguration {
 
 		@Bean
-		public CommonAdderService calculator() {
-			return new CommonAdderService();
+		public AdderService calculator() {
+			return new AdderService();
 		}
 
 		@Bean

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import testingil.webinar.testability.ex4.mockability.BetterRepository;
 import testingil.webinar.testability.ex4.mockability.BlackAdder;
-import testingil.webinar.testability.ex4.mockability.CommonAdder;
+import testingil.webinar.testability.ex4.mockability.Adder;
 import testingil.webinar.testability.ex4.mockability.InferiorRepository;
 
 class AdderTests{
@@ -18,7 +18,7 @@ class AdderTests{
 	@DisplayName("This one goes to the database")
 	void adderTest() {
 		InferiorRepository repository = new InferiorRepository();
-		CommonAdder adder = new CommonAdder(repository);
+		Adder adder = new Adder(repository);
 		adder.add(3, 4);
 		assertThat(adder.getResult(), is(7));
 	}

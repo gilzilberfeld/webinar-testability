@@ -15,7 +15,7 @@ class AdderTests {
 	@Test
 	@DisplayName("This one goes to the database")
 	void adderTest() {
-		InferiorAdder adder = new InferiorAdder();
+		Adder adder = new Adder();
 		adder.add(3, 4);
 		assertThat(adder.getResult(), is(7));
 	}
@@ -24,7 +24,7 @@ class AdderTests {
 	@DisplayName("This one definitely doesn't")
 	void improvedAdderTest() {
 		AdderRepository mockRepository = mock(AdderRepository.class);
-		RareAdder adder = new RareAdder(mockRepository);
+		BetterAdder adder = new BetterAdder(mockRepository);
 		adder.add(3, 4);
 		assertThat(adder.getResult(), is(7));
 	}
