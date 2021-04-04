@@ -8,7 +8,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import testingil.webinar.testability.ex4.mockability.BetterRepository;
-import testingil.webinar.testability.ex4.mockability.BlackAdder;
+import testingil.webinar.testability.ex4.mockability.BetterAdder;
 import testingil.webinar.testability.ex4.mockability.Adder;
 import testingil.webinar.testability.ex4.mockability.InferiorRepository;
 
@@ -27,10 +27,10 @@ class AdderTests{
 	@DisplayName("This one can be mocked")
 	void improvedAdderTest() {
 		BetterRepository repository = mock(BetterRepository.class);
-		BlackAdder adder = new BlackAdder(repository);
+		BetterAdder adder = new BetterAdder(repository);
 		adder.add(3, 4);
 		assertThat(adder.getResult(), is(7));
 	}
 	
-
+	
 }

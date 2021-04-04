@@ -1,10 +1,10 @@
 package testingil.webinar.testability.ex4.mockability;
 
-public class BlackAdder {
+public class BetterAdder {
 	private int temporaryResult=0;
 	private BetterRepository repository;
 	
-	public BlackAdder(BetterRepository repository) {
+	public BetterAdder(BetterRepository repository) {
 		this.repository= repository;
 	}
 	
