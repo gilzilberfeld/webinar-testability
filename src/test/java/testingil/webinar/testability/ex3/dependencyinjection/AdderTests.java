@@ -21,7 +21,7 @@ class AdderTests {
 	}
 	
 	@Test
-	@DisplayName("This one definitely doesn't")
+	@DisplayName("This one definitely doesn't because it's mocked")
 	void improvedAdderTest() {
 		AdderRepository mockRepository = mock(AdderRepository.class);
 		BetterAdder adder = new BetterAdder(mockRepository);

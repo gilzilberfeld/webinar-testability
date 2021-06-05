@@ -22,7 +22,7 @@ class AdderServiceTests {
 	}
 
 	@Test
-	@DisplayName("Second service path")
+	@DisplayName("Cover both paths")
 	void test_second() throws Exception {
 		String result = Utils.postUrl("/adder2/addTwo", "3", "5");
 		assertThat(result, is("8"));

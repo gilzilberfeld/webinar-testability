@@ -24,7 +24,7 @@ class AdderTests{
 	}
 	
 	@Test
-	@DisplayName("This one can be mocked")
+	@DisplayName("This repository can be mocked")
 	void improvedAdderTest() {
 		BetterRepository repository = mock(BetterRepository.class);
 		BetterAdder adder = new BetterAdder(repository);
