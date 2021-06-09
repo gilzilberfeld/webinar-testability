@@ -19,6 +19,7 @@ class AdderServiceTests {
 	@DisplayName("Can add and store but cannot read")
 	void store_and() throws Exception {
 		Utils.postUrl("/adder/add", "3");
+		
 		// this fails because there is no API
 		String result = Utils.getUrl("/adder/tempResult");
 		assertThat(result, is("3"));
